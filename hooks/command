@@ -6,7 +6,7 @@ set -o pipefail
 
 # Reads either a value or a list from plugin config
 function plugin_read_list() {
-  local prefix="BUILDKITE_PLUGIN_PIPELINE_LINTER_$1"
+  local prefix="BUILDKITE_PLUGIN_OPENAPI_VALIDATOR_$1"
   local parameter="${prefix}_0"
 
   if [[ -n "${!parameter:-}" ]]; then
