@@ -1,0 +1,14 @@
+name: OpenAPI validator
+description: validate openapi v3 files.
+author: https://github.com/xiaket
+requirements:
+  - bash
+  - python3
+configuration:
+  properties:
+    files:
+      type: [string, array]
+      minItems: 1
+  required:
+    - files
+  additionalProperties: false
